@@ -1,0 +1,48 @@
+<table>
+  <thead>
+<tr>
+  <th [attr.colspan]="columnspan">
+    Employee Details
+  </th>
+</tr>
+  </thead>
+  <tbody>
+<tr>
+ <td>
+first name
+ </td>
+ <td>
+{{firstname}}
+ </td>
+</tr>
+<tr>
+ <td>
+last name
+ </td>
+ <td>
+   {{lastname}}
+ </td>
+</tr>
+<tr *ngIf = "showdetails">
+ <td>
+gender
+ </td>
+ <td>
+   {{gender}}
+ </td>
+</tr>
+<tr  *ngIf = "showdetails">
+ <td>
+age
+ </td>
+ <td>
+   {{age}}
+ </td>
+</tr>
+
+  </tbody>
+</table>
+<br/><br/>
+<button (click) = "toogleDetails()" >
+  show details
+</button>
