@@ -9,8 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
     pageHeader: string = "Employee details";
-    showdetails:boolean = false;
-    toogleDetails(): void{
-this.showdetails = !this.showdetails;
+    showDetails: boolean = false;
+
+    toggleDetails(): void{
+this.showDetails = !this.showDetails;
     }
 }

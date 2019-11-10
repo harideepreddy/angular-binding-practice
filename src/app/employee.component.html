@@ -23,7 +23,7 @@ last name
    {{lastname}}
  </td>
 </tr>
-<tr *ngIf = "showdetails">
+<tr *ngIf = 'showDetails'>
  <td>
 gender
  </td>
@@ -31,7 +31,7 @@ gender
    {{gender}}
  </td>
 </tr>
-<tr  *ngIf = "showdetails">
+<tr *ngIf = 'showDetails'>
  <td>
 age
  </td>
@@ -42,7 +42,7 @@ age
 
   </tbody>
 </table>
-<br/><br/>
-<button (click) = "toogleDetails()" >
-  show details
+<br/>
+<button  on-click="toggleDetails()">
+  Show Details
 </button>
